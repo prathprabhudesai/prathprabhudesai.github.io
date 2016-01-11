@@ -134,7 +134,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0 0;
 }
 
 /**
@@ -151,7 +151,7 @@ mark {
  */
 
 small {
-  font-size: 80%;
+  font-size: 90%;
 }
 
 /**
@@ -416,6 +416,7 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+
 }
 
 td,
