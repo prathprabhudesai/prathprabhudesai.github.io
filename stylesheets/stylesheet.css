@@ -203,7 +203,8 @@ a {
   .main-content blockquote > :last-child {
     margin-bottom: 0; }
 .main-content table {
-  display: block;
+margin-left: 100px;  
+display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
@@ -212,7 +213,7 @@ a {
     font-weight: bold; }
   .main-content table th, .main-content table td {
     padding: 0.5rem 1rem;
-    border: 1px solid #e9ebec; }
+    border: 0 ; }
 .main-content dl {
   padding: 0; }
   .main-content dl dt {
@@ -272,3 +273,15 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+@media screen and (max-width: 1020px) { 
+#container, #header, #content, #footer {
+    float: none;
+    width: auto;
+  }
+#subtitle, #share, #slider, #sidebar {
+    display:none;
+p{ font-size: 2em; }
+img { 
+}	
+
