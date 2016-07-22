@@ -1,181 +1,416 @@
-<!DOCTYPE html>
-<html lang="en-us" class="highContrastSetting">
+<!doctype html>
+<html>
+
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Projects | Prathamesh Prabhudesai</title>
-<link rel="shortcut icon" href="icon.png">
-    <meta name="viewport" content="100%, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="shortcut icon" href="site-logo.png" />
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/mysocial.css">
+    <link href="stylesheets/images_styling.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
   </head>
+
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Prathamesh Prabhudesai</h1>
-      <h2 class="project-tagline">
-<a href="home.html" style="color:#ffffff" margin="20px"",>Home</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="about.html" style="color:#ffffff",>About</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="projects.html" style="color:#ffffff",>Projects</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="publications.html" style="color:#ffffff",>Publications/Conferences</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="music.html" style="color:#ffffff",>Music</a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-</h2>
+    <div class="wrapper">
+      <header>
+        <!-- If Mobile Device -->
+        <div class="mobileclass">
+          <center>
+            <a href="index.html">
+              <img src="mobile.png" class="mobilepic"></img>
+            </a>
+            <p class="view">
+            <a href="index.html">About Me</a> |
+            <a href="#"><strong>Projects</strong></a> |
+            <a href="research.html">Research</a> |
+            <a href="music.html">Music</a>
+            </p>
+          </center>
+        </div>
+        <!-- For rest all devices -->
+        <div class="otherwise">
+          <center><a href="index.html"><img id="profilepic" src="10184952.jpeg"></img></a></center>
+          <center><a href="index.html" style="text-decoration:none;"><h1>Prathamesh<br>Prabhudesai</div></h1></a></center>
+          <div class="pageview">
+            <center>
+              <font style="font-size:17px;">
+                <div style="width:40%;text-align:right;float:left;">
+                  <img src="symbols/aboutme.png" style="width:20px;height:20px;">
+                  </img>&nbsp;&nbsp;&nbsp;<br>
+                  &lt;/&gt;&nbsp;&nbsp;&nbsp;<br>
+                  <img src="symbols/atom.jpg" style="width:20px;height:20px;">
+                  &nbsp;&nbsp;&nbsp;</img><br>
+                  <font style="font-size:22px;vertical-align:top;">&sung;</font>
+                  &nbsp;&nbsp;&nbsp;
+                </div>
+                <div style="width:60%;text-align:left;">
+                  <a href="index.html">About Me</a><br>
+                  <a href="#"><font color="black">Projects</font></a><br>
+                  <a href="research.html">Research</a><br>
+                  <a href="music.html">Music</a>
+                </div>
+              </font>
+            </center>
+          </div>
+      </header>
+
+    <section>
+
+      <h1>Projects</h1>
+      <br>
+<!-- Project 1 -->
+<ul>
+    <li id="p1">  <p align="justify">
+      <projectname>Water Detection & Segmentation - SVM,
+        NN, PCA, Clustering</projectname>
+      ( <a href="https://github.com/prathprabhudesai/SVM-NN-PCA-Clustering-WaterSegmentation" target="_blank">Code</a> |
+      <a href="https://github.com/prathprabhudesai/SVM-NN-PCA-Clustering-WaterSegmentation/blob/master/Project%20Report.pdf" target="_blank">Project Report</a> |
+      <a onclick="showdiv('pvm1','project1')"><span id="pvm1"></span></a> )</li>
+      <div class="projectDivClass" id="project1">
+        Implementated the Support Vector Machines, Neural Networks, Principal Component ANalysis
+        and Clustering algorithms to detect
+        water in a topographical area, segment that area and classify as flood or
+        non-flood region.<br>
+        Features used: Mean and Variance of Hue and Saturation<br>
+        Neural Networks: MATLAB toolbox for ANN is used for training and testing purpose.
+        <br>
+        Support Vector Machines: Since the data distribution is non-linear,
+        <code>radial basis function</code> is used to get the separating plane.
+        <code>Sequential Minimal Optimization</code> is used to solve the optimization
+        problem.<br>
+        Principal Component Analysis: <code>KL transform</code> is performed on the data and
+        projected onto minor <code>eigen vector</code>.<br>
+        Clustering: <code>K-means Clustering</code> is used.
+         <center>
+           <img src="projectImages/water-segmentation.png" /><br>
+           Result of Multiscale Segmentation using Support Vector Machines<br>
+         </center>
+       </div>
+     </p>
+
+<!-- Project 2 -->
+<li>
+      <p align="justify">
+        <projectname>Water Detection & Segmentation - Bayes Classifier, Punish and Reward
+          Algorithm</projectname>
+          ( <a href="https://github.com/prathprabhudesai/Water_Segmentation-Bayesian-Perceptron" target="_blank">Code</a> |
+          <a href="https://github.com/prathprabhudesai/Water_Segmentation-Bayesian-Perceptron/blob/master/Project%20Report.pdf" target="_blank">Project Report</a> |
+          <a onclick="showdiv('pvm2','project2')"><span id="pvm2"></span></a> )</li>
+          <div class="projectDivClass" id="project2">
+          Implementated the above mentioned machine learning algorithms to detect
+          water in a topographical area, segment that area and classify as flood or
+          non-flood region.<br>
+          Features used: Mean and Variance of Hue and Saturation<br>
+          Bayesian Classifier: Probabilities are used in <code>Multiscale Segmentation</code>.
+          <br>
+          Perceptron Algorithm: Less accuracy because of non-linear data.
+          <br>
+           Technical paper on <strong>Adaptive Sky Removal</strong> is in progress.
+         </div>
+         </p>
+
+<!-- Project 3 -->
+<li>
+         <p align="justify">
+           <projectname>Scale Invariant Feature Transform for Panaromic Image Stitching</projectname>
+           ( <a href="https://github.com/prathprabhudesai/Panoramic-Image-Stitching-SIFT" target="_blank">Code</a> |
+           <a href="https://github.com/prathprabhudesai/Panoramic-Image-Stitching-SIFT/blob/master/Project%20Report.pdf" target="_blank">Project Report</a> |
+           <a onclick="showdiv('pvm3','project3')"><span id="pvm3"></span></a> )</li>
+           <div class="projectDivClass" id="project3">
+           Principle of homography is used in order to stitch two images.
+           Images considered have at least 40% overlap.
+           <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf" target="_blank">Scale Invariant Feature Transform</a> descriptor is modified to generate
+           <code>Homography Matrix</code> which is used to stitch the two images.
+           <center>
+           <img src="projectImages/separate.png" /><br>
+           Two Separate Images with some overlapped area<br><br>
+           <img src="projectImages/joined.png" style="height:190px;" /><br>
+           Stitched Image
+         </center>
+       </div>
+         </p>
+
+
+<!-- Project 4 -->
+<li>
+         <p align="justify">
+           <projectname>Circular Extension to Hough Transform</projectname>
+           ( <a href="https://github.com/prathprabhudesai/Circular-Extension-Hough-Transform" target="_blank">Code</a> |
+           <a onclick="showdiv('pvm4','project4')"><span id="pvm4"></span></a> )</li>
+           <div class="projectDivClass" id="project4">
+           <a href="https://en.wikipedia.org/wiki/Hough_transform" target="_blank">Hough Transform</a> is used to find the shapes in the images.
+            This extension is nothing but finding circles in the images. Images used for testing
+            are the <a href="https://en.wikipedia.org/wiki/Range_imaging" target="_blank">range images</a> which are then converted to
+            <a href="https://en.wikipedia.org/wiki/Depth_map" target="_blank">depth images</a>.
+            <center>
+              <img src="projectImages/hough.png" style="height:128px;" /><br>
+              Lead Hole Detection<br>
+            </center>
+          </div>
+         </p>
+
+<!-- Project 5 -->
+<li>
+         <p align="justify">
+           <projectname>Variable Conductance Diffusion for Edge Preserving Smoothing</projectname>
+           ( <a href="https://github.com/prathprabhudesai/Edge-Preserving-Smoothing_VCD" target="_blank">Code</a> |
+           <a href="https://github.com/prathprabhudesai/Edge-Preserving-Smoothing_VCD/blob/master/Project%20Report.pdf" target="_blank">Project Report</a> |
+           <a onclick="showdiv('pvm5','project5')"><span id="pvm5"></span></a> )</li>
+           <div class="projectDivClass" id="project5">
+           Edge is a prime source of information in the image. Blurring or smoothing destroys the
+           edge content of an image. There comes the edge preserving smoothing comes in picture.
+           Here the algorithm based on <code>Heat Equation: ∂fi/∂x = &alpha;(&nabla;^T(c&nabla;f))|i</code>
+           is used for this purpose where the difference is added to the original image till some
+           optimized output is acheived.
+           <center>
+             <img src="projectImages/vcd.png" /><br>
+             Edge Preserving Smoothing on an X-ray image of Coronary Arteries<br>
+           </center>
+         </div>
+         </p>
+
+<!-- Project 12 -->
+<li>
+         <p align="justify">
+           <projectname>Statistical Modelling of Fish Population</projectname><br>
+           ( <a href="documents/rp.pdf" target="_blank">Project Report</a> |
+           <a onclick="showdiv('pvm12','project12')"><span id="pvm12"></span></a> )</li>
+           <div class="projectDivClass" id="project12">
+             Echo SONAR is used for the determination of fish population which
+             used sinusoidal sound pulses with <code>Rayleigh Distributed</code> amplitudes.
+             The school of fish was found to be <code>Normally Distributed (Gaussian)</code>
+             verifying the <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank">
+               Central Limit Theorem</a>.
+             The process was modelled using fish's position, orientation and
+             motion as random variables.
+           </div>
+         </p>
+
+
+
+<!-- Project 6 -->
+<li>
+         <p align="justify">
+           <projectname>OPNET Simulations</projectname>
+           ( <a onclick="showdiv('pvm6','project6')"><span id="pvm6"></span></a> )</li>
+           <div class="projectDivClass" id="project6">
+             <strong>Small Internetworks</strong>
+               <p align="justify">Star and extended-star network topologies were modelled for small
+               office network using OPNET Riverbed Modeler. Discussed performance
+               issues related to Ethernet delay, Ethernet load and network traffic.</p>
+             <strong>M/M/1 Queue Simulation Modelling</strong>&nbsp;
+               <p align="justify">Modelled an M/M/1 Queueing system in OPNET and analysed the network
+               performance based on packet arrival rates, packet sizes and service capacities.</p>
+             <strong><p align="justify">Mixed 802.11 WLAN Configurations, RTS/CTS and Jammer Performance</strong>
+               <br>
+               Performance issues of WLAN 802.11n, 802.11g and 802.11b based on
+               network load, throughput and traffic drop are discussed.
+               Discussed the hidden node problem.
+               Network performance in presence of Jammer based on jammer location,
+               in terms of drop in traffic and throughput is analyzed.</p>
+          <center>
+            <img src="projectImages\opnet.png"/><br>
+            Time Averaged Graph of Traffic Drop because of Buffer Overflow<br>
+            Blue Line - Network with all 802.11n nodes, Red Line - Network with 802.11n and 802.11g nodes,
+             Green Line - Network with 802.11n/b/g all nodes<br>
+          </center>
+        </div>
+         </p>
+
+
+<!-- Project 7 -->
+<li>
+        <p align="justify">
+         <projectname>Open Stream Water Velocity Profiler using Image Processing</projectname>
+         ( <a href="documents/BE.pdf" target="_blank">Project Report</a> |
+         <a onclick="showdiv('pvm7','project7')"><span id="pvm7"></span></a> )</li>
+         <div class="projectDivClass" id="project7">
+           This system was developed for open-stream water velocity profiling using Image Processing algorithms
+           influenced by motion tracking and
+           <a href="https://en.wikipedia.org/wiki/Particle_image_velocimetry" target="_blank" >Particle Image Velocimetry</a>.
+           Research was carried out on <a href="http://cwprs.gov.in/Documents/file/mumbai.JPG" target="_blank" >Mumbai Port Model</a> to tackle the safety issues regarding
+           over-flooding in the area of
+           <a href="https://en.wikipedia.org/wiki/Navi_Mumbai_International_Airport" target="_blank">Navi Mumbai International Airport</a>.
+           Then existing hardware technologies mainly included <a href="https://en.wikipedia.org/wiki/Acoustic_Doppler_current_profiler" target="_blank">
+             Vertical Acoustic Doppler Current Profiler (ADCP)</a> sensors which are costly and
+              fail to achieve directional profiling. This non-contact technology provided a
+              low cost and accurate solution overcoming the existing drawbacks.
+           <center>
+             <img src="projectImages/flow.png"/><br>
+             Flow tracking through a colored liquid discharge<br>
+           </center>
+         </div>
+         </p>
+
+<!-- Project 8 -->
+<li>
+         <p align="justify">
+         <projectname>Sediment Categorization and Quantization </projectname>
+         ( <a onclick="showdiv('pvm8','project8')"><span id="pvm8"></span></a> )</li>
+         <div class="projectDivClass" id="project8">
+            Research was carried out on the sediment depositories in the coastal hydraulic model
+            with an aim of identifying the reservoir storage capacity,
+            advanced planning for water management and strengthening silt removal process.
+            A new algorithm based on <a href="https://en.wikipedia.org/wiki/Gamma_correction" target="_blank">
+              gamma correction</a> was developed for the accurate
+            detection of sediments and neural network techniques were used for the classification.
+            <center>
+              <img src="projectImages/sed.png" /><br>
+              Pseudo-colored Image of Sediment Classification - Compressed(Orange),
+              Hindered(Yellow), Flocculent (Pink), Clear Water (Blue)<br>
+            </center>
+          </div>
+        </p>
+</li>
+<!-- Project 9 -->
+<li>
+        <p align="justify">
+         <projectname>Bed Profiling and Dispersion Analysis</projectname>
+         ( <a onclick="showdiv('pvm9','project9')"><span id="pvm9"></span></a> )</li>
+         <div class="projectDivClass" id="project9">
+           Analysis of topographic nature of the water channel was done using bed profiling
+           with the help of sensor mapping and contour plotting.
+           The dispersion coefficients were calculated for the analysis of behavior of foreign fluids in water.
+         </div>
+         </p>
+
+<!-- Project 10 -->
+<li>
+        <p align="justify">
+          <projectname>Vehicular Database Management System for Accident Avoidance</projectname>
+          (<a href="documents/NI.pdf" target="_blank">Project Report</a> |
+          <a onclick="showdiv('pvm10','project10')"><span id="pvm10"></span></a> )</li>
+          <div class="projectDivClass" id="project10">
+            The accidents we focused are mostly due to over-speeding.
+            A microcontroller based speed monitoring system was developed for a
+            vehicle (local station) which would compare the instantaneous speed
+            with the location based spped limit. The decsion authority
+            (Stopping the vehicle, logging, license cancellation) and control
+            station were equipped with <em>NI LabVIEW</em>. Communication
+            between local stations and a central control station was established
+            through a GSM link.<br>
+            <a href="https://decibel.ni.com/content/docs/DOC-24675" target="_blank">NIYANTRA 2012, Autonomous Embedded System Design Competition, Finalist</a><br>
+            <center>
+              <iframe src="https://www.youtube.com/embed/w9rNdJ8tpOs" frameborder="0" allowfullscreen></iframe>
+            </center>
+          </div>
+        </p>
+
+
+<!-- Project 11 -->
+<li>
+        <p align="justify">
+          <projectname>Camera Aided Topography Measurement System</projectname><br>
+          (<a href="documents/TE.pdf" target="_blank">Project Report</a> |
+          <a onclick="showdiv('pvm11','project11')"><span id="pvm11"></span></a> )</li>
+          <div class="projectDivClass" id="project11">
+            The project was an implementation and modification of an IEEE paper
+            <a href = "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5715878&newsearch=true&queryText=r%20Distance%20and%20Angle%20Measurement%20of%20Objects%20on%20an%20Oblique%20Plane%20Based%20on%20Pixel%20Number%20Variation%20of%20CCD%20Images" target="_blank">
+            Distance and Angle Measurement of Objects on an Oblique Plane
+              Based on Pixel Number Variation of CCD Images</a>. It dealt with the
+              topographic analysis of the surrounding using various trigonometric
+              distance measurement methods and PNV.
+              <center>
+                <img src="projectImages/cameraaided.png" /><br>
+                Two Dimensional Localization of the Object<br>
+              </center>
+          </div>
+        </p>
+
+</ul>
+
+
+
+
+
+    <center>
+        <p id="back-top">
+          <img src="symbols/uparrow1.png" style="width:20px;height:20px;"></img><br>
+        <a href="#top"><span></span>Back to Top</a>
+        </p>
+    </center>
+
     </section>
-<section class="main-content">
 
-<!-- Course Projects -->
-<p>
-<center><img src="logos/ncstate.jpg" width="auto"/><br>
-<strong>North Carolina State University (Course Projects)</strong></center>
-</p><br>
-<ul style=list-style-type:square>
-<!-- Wifi -->
-<li><p align="justify"><Strong><small>Mixed 802.11n/802.11b/802.11g WLAN, RTS/CTS and Jammer Performance</small> </strong> <br></li>
-<i><small><small>CSC/ECE 570: Computer Networks, Fall 2015</small></i>
-<ul style="list-style-type:circle">
-  <li><small>Performance issues of WLAN 802.11n, 802.11g and 802.11b based on network load, throughput and traffic drop.</small></li> 
-  <li><small>Hidden node problem.</small></li>
-  <li><small>Network performance in presence of Jammer based on jammer location,  in terms of drop in traffic and throughput.</small></li></small>
-</ul> 
-<br>
-<!-- MM1 -->
-<li><p align="justify"><Strong><Small>M/M/1 Queue Simulation Modelling</small> </strong><br></li>
-<small><i><small>CSC/ECE 570: Computer Networks, Fall 2015</small></i>
-<ul style="list-style-type:circle">
-  <li><small>Modelled an M/M/1 Queueing system in OPNET and analysed the network performance based on packet arrival rates, packet sizes and service capacities.</small></li> </small>
-</ul> 
-<br>
-<!-- Small Internetworks -->
-<li><p align="justify"><Strong><Small>Small Internetworks</small> </strong><br></li>
-<small><small><i>CSC/ECE 570: Computer Networks, Fall 2015</small></i>
-<ul style="list-style-type:circle">
-<li><small>Star and extended-star network topologies were modelled for small office network using OPNET Riverbed Modeler.</small></li>
- <li><small>Discussed performance issues related to Ethernet delay, Ethernet load and network traffic.</small></small>
-</ul> 
-<br>
-<!-- RP -->
-<li><p align="justify"><Strong><Small>Statistical Modelling of Fish Population </strong> <small><small>(<a href="reports/rp.pdf" target="blank">report</a>, <a href="https://github.com/prathprabhudesai/statmodel" target="blank">matlab codes</a>)</small></small></small><br></li>
-<small><i><small>ECE 514: Random Processes, Fall 2015</small></i>
-<ul style="list-style-type:circle">
-<li><small>Echo SONAR is used for the determination of fish population which used sinusoidal sound pulses with rayleigh distributed amplitudes.</small></li>
- <li><small>The school of fish was found to be normally distributed (gaussian) verifying the Central Limit Theorem.</small></li>
-<li><small>The process was modelled using fish's position, orientation and motion as random variables.</small></small></li>
-</ul> 
-<hr>
-</ul>
-
-
-
-
-
-
-
-<p>
-<center><img src="logos/cwprs.jpg" width="auto"/><br>
-<strong>Central Water and Power Research Station (Research Projects)</strong>
-</center></p>
-<br>
-<!-- VP -->
-<ul style=list-style-type:square>
-<li><p align="justify"><Strong><Small>Flow Pattern and Velocity Measurement in a Physical Hydraulic Model Using Image Acquiring and Processing System </strong> <small><small>(<a href="reports/BE.pdf" target="blank"">report</a>)</small></small><br></li>
-<i><small>Senior Year Thesis</small></i>
-<ul style="list-style-type:circle">
-  <li><small>System aims at open-stream water velocity profiling using Digital Image Processing algorithms influcned by motion tracking and Particle Image Velocimetry.</small></li> 
-  <li><small>Research was carried out on <i>Bombay Port Model</i> to tackle the safety issues regarding over-flooding in the area of <i>Navi Mumbai International Airport</i>.</small></li>
-  <li><small>Then existing hardware technologies mainly included Vertical Acoustic Doppler Current Profiler (ADCP) sensors which are costly and fail to acheive directional profiling.</small></li>
-  <li><small>This non-contact technology provided a low cost and accurate solution overcoming the existing drawbacks.</small></small></li>
-</ul> 
-<br>
-<!-- Sed -->
-<li><p align="justify"><Strong><Small>Sediment Deposition Analysis: Categorization and Quantization </strong> <br></li>
-<ul style="list-style-type:circle">
-  <li><small>Research was carried out on the sediment depositories in the coastal hydraulic model with an aim of identifying the reservoir storage capacity, advanced planning for water management and strengthening silt removal process.</small></li> 
-  <li><small>A new algorithm based on gamma correction was developed for the accurate detection of sediments and neural network techniques were used for the classification.</small></small></li>
-</ul> 
-<br>
-<!-- Bed Disp -->
-<li><p align="justify"><Strong><Small>Bed Profiling and Dispersion Analysis </strong> <br></li>
-<ul style="list-style-type:circle">
-  <li><small>Analysis of topographic nature of the water channel was done using bed profiling with the help of sensor mapping and contour plotting.</small></li> 
-  <li><small>The dispersion coefficients were calculated for the analysis of behavior of foreign fluids in water.</small></small></li>
-</ul> 
-<hr>
-</ul>
-
-
-
-
-
-
-
-
-<!-- NIYANTRA -->
-
-<p>
-<center>
-<img src="logos/ni.jpg" width="110" height="30"/><br>
-<strong><a href="http://india.ni.com/niyantra" target=blank >NIYANTRA 2012</a></strong>
-</center></p>
-
-
-<ul style=list-style-type:square>
-<li><p align="justify"><Strong><Small>Vehicular Database Management System for Accident Avoidance </strong><small><small>(<a href="reports/NI.pdf" target="blank">report</a>)</small></small><br></li>
-<ul style="list-style-type:circle">
-  <li><small>Project dealt with the innovative methodology to avoid accidents mainly occurred due to over-speeding.</small></li> 
-  <li><small>A microcontroller based speed monitoring system was developed for a vehicle (local station) which would compare the instantaneous speed with the location based spped limit.</small></li>
-  <li><small>The decsion authority (Stopping the vehicle, logging, license cancellation) and control station were equipped with NI LabVIEW.</small></li>
-  <li><small>Communication between local stations and a central control station was established through a GSM link.</small></small></li>
-</ul> 
-</ul>
-<hr>
-</ul>
-
-
-
-
-<!-- PICT -->
-
-<p>
-<center><img src="logos/pict.jpg" width="auto"/><br>
-<strong>Pune Institute of Computer Technology</strong>
-</center></p>
-<!-- CATMS -->
-<ul style=list-style-type:square>
-<li><p align="justify"><Strong><Small>Camera Aided Topography Measurement System </strong><small><small>(<a href="reports/TE.pdf" target="blank">report</a>)</small></small><br></li>
-<i><small>Junior Year Mini Project and Seminar</small></i>
-<ul style="list-style-type:circle">
-  <li><small>The project was an implementation and modification of an IEEE paper <a href = "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5715878&newsearch=true&queryText=r%20Distance%20and%20Angle%20Measurement%20of%20Objects%20on%20an%20Oblique%20Plane%20Based%20on%20Pixel%20Number%20Variation%20of%20CCD%20Images" target="blank">Distance and Angle Measurement of Objects on an Oblique Plane Based on Pixel Number Variation of CCD Images.</a></small></li> 
-  <li><small>It dealt with the topographic analysis of the surrounding using various trigonometric distance measurement methods and PNV.</small></small></li>
-</ul> 
-</ul>
-<hr>
-
-
-
-
-
-<!-- FUN -->
-<p>
-<br>
-<center><strong> Fun </strong> </center>
-</p>
-<ul style=list-style-type:square>
-<li><p align="justify"><Strong><Small> SPSD Classifier </strong><small><small>(<a href="https://github.com/prathprabhudesai/spsdclassifier" target="blank">code</a>)</small></small><br></li>
-<ul style="list-style-type:circle">
-  <li><small>An if-else based classifier system is developed in <i>python</i>.</small></li> 
-  <li><small>It can seggregate clothes in five classes viz. shirts, pants, dresses, skirts and none.</small></li>
-  <li><small>Vertical and hirozontal histogramic distribution is used for thresholding, clasifier training and decision making.</small></small></li>
-</ul> 
-</ul>
-<center><a href=projects.html><img src="top.jpg" height="30" width="30"/><br>
-<small><small><small>Back to top</small></small></small>
-</a>
-</center>
-
-
-<footer class="site-footer">
-        <span class="site-footer-credits"><center><small><small>Copyright: Prathamesh Prabhudesai</a>.
-</footer>
-</section>
+    <footer>
+      <center>
+      <a href="#"><button>Download Resume</button></a>
+    </center>
+      <div class="social">
+        <center>
+        <a href="https://www.facebook.com/prathamesh.prabhudesai" target="_blank"><img id="fb" class="social" src="symbols/final/facebook.png"></img></a>
+        <a href="https://www.linkedin.com/in/prathameshprabhudesai" target="_blank"><img id="li" class="social" src="symbols/final/linkedin.png"></img></a>
+        <a href="https://github.com/prathprabhudesai" target="_blank"><img id="git" class="social" src="symbols/final/github.png"></img></a>
+        <a href="mailto:ppprabhu@ncsu.edu" target="_blank"><img id="mail" class="social" src="symbols/final/mail.png"></img></a>
+        <a href="https://soundcloud.com/prathamesh-prabhudesai" target="_blank"><img id="sc" class="social" src="symbols/final/soundcloud.png"></img></a>
+      </center>
+    </div>
+      <p><center>Copyright © <a href="index.html">Prathamesh Prabhudesai</a></center></p>
+    </footer>
+  </div>
+  <script src="javascripts/scale.fix.js"></script>
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+
+	// hide #back-top first
+	$("#back-top").hide();
+
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});
+</script>
+
+<script>
+
+for(var i=1;i<13;i++) document.getElementById('pvm'+i.toString()).innerHTML = '↓ View Details';
+
+function showdiv(a,b)
+{
+  if(!document.getElementById(b).style.display || document.getElementById(b).style.display == 'none')
+  {
+    document.getElementById(b).style.display = 'block';
+    document.getElementById(a).innerHTML = '✕ Close';
+  }
+  else
+  {
+  document.getElementById(b).style.display = 'none';
+  document.getElementById(a).innerHTML = '↓ View Details';
+  }
+}
+</script>
+
+<style>
+ul{
+    list-style : none;
+    padding-left: 0;
+}
+li{
+  border-left: 2px solid #39c;
+  padding-left: 5px;
+}
+</style>
